@@ -1,3 +1,8 @@
+/*
+Name: Cannon Flinders         Program: Clock
+Description: This is a clock program that finds the time from midnight, the seconds remaining in the day, and 
+the percentage of the day that has passed all from the input put into the varibles
+*/
 public class time {
     public static void main(String[] args) {
         // 24hr clock
