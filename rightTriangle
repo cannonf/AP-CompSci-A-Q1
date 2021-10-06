@@ -1,0 +1,37 @@
+
+/*
+Name: Cannon Flinders        Program: Right Triangle
+Description: This program take the sides on a triangle in decending order and calculates what kind of 
+triangle it will be
+*/
+import java.util.Scanner;
+
+public class rightTriangle {
+    public static void main(String[] args) {
+        // this is implanting the scanner
+        Scanner reader = new Scanner(System.in);
+        System.out.println("Please enter 3 side lengths: ");
+        // this is taking the inputs from the user
+        int a = reader.nextInt();
+        int b = reader.nextInt();
+        int c = reader.nextInt();
+        // If you put them back to back like that then it asks the user many times
+        double abPow = Math.pow(a, 2) + Math.pow(b, 2);
+        // the reason this is a double and not an int is because Math.pow only works in
+        // doubles
+        double cPow = Math.pow(c, 2);
+
+        if (cPow == abPow) {
+            System.out.println("Your triangle is a right triangle!");
+        }
+        // I used an else if statement because there are more then 2 options and it made
+        // the most sense
+        else if (cPow > abPow) {
+            System.out.println("Your triangle is an obtuse triangle!");
+        } else if (cPow < abPow) {
+            System.out.println("Your triangle is an acute triangle! ");
+        }
+
+    }
+
+}
